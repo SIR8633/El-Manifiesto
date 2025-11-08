@@ -1,0 +1,120 @@
+/* ARQUITECTURA DE SILICIO - style.css */
+
+/* ----- RESETEO BÁSICO ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- ESTILO DEL "SOL NEGRO" ----- */
+body, html {
+    font-family: 'Consolas', 'Menlo', 'monospace', serif;
+    background-color: #000000;
+    color: #c0c0c0; /* Plata / Silicio */
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ----- ENCABEZADO (LOCUS & LOGOS) ----- */
+.header {
+    text-align: center;
+    padding: 40px 0;
+    letter-spacing: 5px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.ampersand {
+    color: #555; /* Un gris sutil */
+    font-weight: 100;
+}
+
+/* ----- ESTRUCTURA DE SECCIÓN ----- */
+.section {
+    padding: 40px 0;
+    border-top: 1px solid #222; /* Divisor de obsidiana */
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.section h3 {
+    font-size: 1.2rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* ----- TEXTOS ESPECIALES ----- */
+.ley {
+    font-style: italic;
+    color: #777;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 10%;
+}
+
+.highlight {
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.proximamente {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #666;
+    letter-spacing: 5px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+/* ----- EL BOTÓN (EL CONTRATO) ----- */
+.button {
+    display: inline-block;
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #c0c0c0; /* Borde de Silicio */
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #ffffff; /* La luz */
+    color: #000000; /* El núcleo */
+    font-weight: bold;
+}
