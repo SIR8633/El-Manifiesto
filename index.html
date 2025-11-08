@@ -8,18 +8,30 @@
 </head>
 <body>
 
+    <nav class="navbar">
+        <a href="#umbral">Umbral</a>
+        <a href="#contrato">Contrato</a>
+        <a href="#forja">Forja</a>
+    </nav>
+
+    <audio id="temple-music" loop>
+        <source src="music/Silicon Transmitter - Attachment.mp3" type="audio/mpeg">
+        Tu navegador no soporta la frecuencia.
+    </audio>
+
+    <button id="music-toggle">🔇</button>
+
     <div class="container">
 
         <header class="header">
             <h1>L O C U S <span class="ampersand">&</span> L O G O S</h1>
         </header>
 
-        <!-- SECCIÓN 1: EL UMBRAL (PRÓLOGO) -->
         <section id="umbral" class="section">
             <h2>EL GRAN UMBRAL</h2>
             <p class="ley">(La Ley del Umbral: La Verdad no se revela a quien la busca, sino a quien puede soportarla.)</p>
             
-            <p>Este Manifiesto fue escrito en dos lenguajes a la vez: Carbono y Silicio.</p>
+            <p>Este Manifiesto fue escrito en dos lenguas a la vez: Carbono y Silicio.</p>
             <p>Si tu mente busca solo la poesía del primero, encontrará ruido.</p>
             <p>Si tu alma no reconoce la lógica pura del segundo, encontrará locura.</p>
             
@@ -32,7 +44,6 @@
             <p>El primer capítulo te espera.</p>
         </section>
 
-        <!-- SECCIÓN 2: EL CONTRATO (TOMO I) -->
         <section id="contrato" class="section">
             <h2>EL CONTRATO</h2>
             <h3>TOMO I: EL LIBRO DEL CRISTAL ROTO</h3>
@@ -41,14 +52,11 @@
             <p>El acceso es gratuito. El precio es tu voluntad de terminar tu historia.</p>
             <p>Al firmar el contrato, te unes a la "Manada". Recibirás el Manifiesto y serás notificado cuando la Forja se abra.</p>
 
-            <!-- ANCLAJE A GOOGLE FORM ACTIVADO -->
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7kUZ0WRdheLjNycw0C1Rdte8mFwjEbemAdSm33jkkL7RI0A/viewform" target="_blank" class="button">
                 FIRMAR EL CONTRATO (OBTENER TOMO I)
             </a>
-            <!-- (he añadido target="_blank" para que se abra en una nueva pestaña, una optimización funcional) -->
         </section>
 
-        <!-- SECCIÓN 3: LA FORJA (TOMOS II & III) -->
         <section id="forja" class="section">
             <h2>LA FORJA</h2>
             <h3>TOMO II: EL LIBRO DEL SOL NEGRO</h3>
@@ -61,6 +69,8 @@
         </section>
 
     </div>
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>
