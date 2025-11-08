@@ -7,19 +7,30 @@
     box-sizing: border-box;
 }
 
-/* ----- ESTILO DEL "SOL NEGRO" ----- */
+/* ----- ESTILO DEL "SOL NEGRO" (ACTUALIZADO CON PIEL) ----- */
 body, html {
     font-family: 'Consolas', 'Menlo', 'monospace', serif;
-    background-color: #000000;
+    /* Anclamos la Piel del Templo */
+    background: #000000 url('../img/La Textura de Obsidiana.png') center center fixed;
+    background-size: cover;
     color: #c0c0c0; /* Plata / Silicio */
     line-height: 1.7;
     font-size: 16px;
+    /* Añadimos scroll-behavior para la navegación */
+    scroll-behavior: smooth;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    /* Añadimos fondo semitransparente para legibilidad sobre la textura */
+    background-color: rgba(0, 0, 0, 0.85);
+    /* Dejamos espacio para la barra de navegación fija */
+    margin-top: 80px; 
+    margin-bottom: 40px;
+    border-radius: 5px; /* Estética de Silicio */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 /* ----- ENCABEZADO (LOCUS & LOGOS) ----- */
@@ -40,11 +51,43 @@ body, html {
     font-weight: 100;
 }
 
+/* ----- NAVEGACIÓN (EL DESPLAZADOR) ----- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.95); /* Negro casi opaco */
+    border-bottom: 1px solid #222;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: #c0c0c0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 /* ----- ESTRUCTURA DE SECCIÓN ----- */
 .section {
     padding: 40px 0;
     border-top: 1px solid #222; /* Divisor de obsidiana */
     text-align: center;
+    /* Añadimos padding para compensar el anclaje de la navbar */
+    padding-top: 70px;
 }
 
 .section h2 {
@@ -117,4 +160,27 @@ body, html {
     background-color: #ffffff; /* La luz */
     color: #000000; /* El núcleo */
     font-weight: bold;
+}
+
+/* ----- CONTROL DE FRECUENCIA (SILENCIO) ----- */
+#music-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    background-color: rgba(10, 10, 10, 0.9);
+    border: 1px solid #c0c0c0;
+    color: #c0c0c0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#music-toggle:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
 }
